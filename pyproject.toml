@@ -13,6 +13,22 @@ dependencies = [
     "nvidia-cudnn-cu12>=9.25.1.1",
 ]
 
+[project.optional-dependencies]
+train = [
+    "torch>=2.2.0",
+    "transformers>=4.40.0",
+    "datasets>=2.18.0",
+    "peft>=0.10.0",
+    "accelerate>=0.28.0",
+    "bitsandbytes>=0.43.0",
+    "evaluate>=0.4.0",
+    "jiwer>=3.0.0",
+    "soundfile>=0.12.0",
+    "librosa>=0.10.0",
+    "ctranslate2>=4.0.0",
+    "pydub>=0.25.0",
+]
+
 [project.scripts]
 fast-whisper-app = "fast_whisper_app:main"
 
