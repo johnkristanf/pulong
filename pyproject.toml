@@ -27,6 +27,7 @@ train = [
     "librosa>=0.10.0",
     "ctranslate2>=4.0.0",
     "pydub>=0.25.0",
+    "torchcodec>=0.16.0",
 ]
 
 [project.scripts]
